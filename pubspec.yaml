@@ -2,7 +2,7 @@ name: inpulse_flutter
 description: "A new Flutter project."
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 0.0.0+1
 
 environment:
   sdk: ^3.7.2
@@ -15,6 +15,7 @@ dependencies:
   change_app_package_name: ^1.4.0
   flutter_launcher_icons: ^0.14.3
   flutter_native_splash: ^2.4.5
+  webview_flutter: ^4.2.2
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +28,30 @@ flutter:
   assets:
     - assets/
     - assets/icons/
+    - assets/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 900
+
 
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -40,8 +65,14 @@ flutter_launcher_icons:
 
 flutter_native_splash:
   color: "#22252A"
-  image: assets/icons/inpulse_logo.png
+  image: assets/icons/inpulse_full_logo.png
+  fullscreen: true
+
+  android_gravity: center
+  ios_content_mode: scaleAspectFit
+
   android_12:
     color: "#22252A"
+    image: assets/icons/inpulse_full_logo.png
     icon_background_color: "#22252A"
-    image: assets/icons/inpulse_logo.png
+
